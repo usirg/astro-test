@@ -1,0 +1,16 @@
+[
+{
+    "id": "1", 
+    "title": "Workshop Spieleentwicklung",
+    "firstSession": "2020-10-01",
+    "lastSession": "2020-10-01",
+    "img": "images/play_640x360.jpg"
+},
+{
+    "id": "2", 
+    "title": "Starterkurs Spieleentwicklung",
+    "firstSession": "2020-11-01",
+    "lastSession": "2021-02-28",
+    "img": "images/race_640x360.jpg"
+}
+]

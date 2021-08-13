@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import BaseHeader from '../components/BaseHeader.astro'
+import BackButton from '../components/BackButton.astro'
+import HomeButton from '../components/HomeButton.astro'
+---
+<BaseLayout title="MakeFest">
+    <div class="max-w-screen-xl mx-auto p-0 space-y-0">
+        <BaseHeader>
+            <HomeButton/>
+        </BaseHeader>
+
+        <div class="bg-black flex flex-row flex-wrap justify-between">
+            <slot/>
+        </div>
+    </div>
+</BaseLayout>

@@ -1,0 +1,13 @@
+---
+export interface Props {
+  label: string;
+  buttonIntensity: string;
+  href: string;
+}
+
+const {label, buttonIntensity='low', href} = Astro.props;
+---
+<a href={href} class={(buttonIntensity == "high" ? 
+  "bg-blue-800 hover:bg-blue-500 active:bg-blue-200 text-gray-300 hover:text-blue-300 active:text-blue-700" : 
+  "bg-gray-800 hover:bg-gray-500 active:bg-gray-200 text-gray-500 hover:text-gray-300 active:text-gray-700") + 
+  " p-5 m-5 w-80 rounded-3xl text-center ${labelColor} text-4xl font-black border border-transparent focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-colors duration-200"}>{label}</a>

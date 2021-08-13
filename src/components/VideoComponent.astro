@@ -1,0 +1,12 @@
+---
+export interface Props {
+  poster: string;
+  src: string;
+  alt: string;
+}
+const {poster, src, alt} = Astro.props;
+---
+<video class="w-full" controls playsinline poster={poster}>
+    <source src={src} type="video/mp4" alt={alt}>
+    Your browser does not support the video tag.
+</video>

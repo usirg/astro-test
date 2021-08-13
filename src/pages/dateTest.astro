@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+//const date = Date.now();
+const date = new Date();
+const dateString = JSON.stringify(date);
+const someDateString = "2020-02-17";
+const someDate = new Date(someDateString);
+---
+<BaseLayout title="MakeFest">
+<div class="text-white">
+    Date: {date}
+    Date JSON: {dateString}
+    Some Date: {someDate}
+</div>
+</BaseLayout>

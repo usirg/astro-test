@@ -1,0 +1,12 @@
+---
+import Courses from '../layouts/courses.astro';
+import CourseCard from '../components/CourseCard.astro';
+import BaseHeader from '../components/BaseHeader.astro';
+import MenuSection from '../components/MenuSection.astro';
+import coursesData from '../json/courses.json';
+---
+<Courses title="MakeFest">
+    {coursesData.map((course) => (
+        <CourseCard id={course.id} title={course.title} duration={course.firstSession}/>
+    ))}
+</Courses>

@@ -1,0 +1,41 @@
+---
+import { Markdown } from 'astro/components';
+import md_ref from '../markdown/info.md';
+const md_data = Astro.fetchContent('../markdown/*.md');
+//const md_data = await fetch(md_ref).then(res => res.text());
+import data from '../json/data.json';
+const content = "# Hello World!!!!";
+
+import BaseButton from '../components/BaseButton.astro';
+const title = 'MakeFest';
+---
+<html class="dark"  lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="/global.css">
+    <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+</head>
+<body class="dark:bg-black font-sans text-white">
+        <Markdown content={data.story}/>
+        <Markdown content={md_data[0].astro.source}/>
+        <!-- <div>{md_data}</div> -->
+
+        <div class="prose">
+        <Markdown>
+        # Heading
+
+        ## Chapter 1
+
+        Erste Zeile
+        <BaseButton label="Kurse" buttonIntensity="high"></BaseButton>
+        Zweite Zeile
+
+        ## Chapter 2
+
+        </Markdown>
+        </div>
+</body>
+</html>
