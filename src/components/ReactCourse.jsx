@@ -1,7 +1,7 @@
 import '/global.css';
 
 export default function ReactCourse(props) {
-    const coursePath = "mf";
+    const coursePath = "/mf";
     const {id, title, duration, img} = props;
     return (
             <a href={coursePath + '/' + id} className="w-full max-w-screen-sm py-2 sm:w-[49%] lg:w-[32%]">

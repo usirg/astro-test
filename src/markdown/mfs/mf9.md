@@ -13,7 +13,7 @@ filePartial:
 ## Wer kann mitmachen:
 
 * Mädchen und Jungen!
-* Erforderliche Vorkenntnisse: Grundkenntnisse zu Unity, C#, VS Code (siehe [Kurs MF 4](4))
+* Erforderliche Vorkenntnisse: Grundkenntnisse zu Unity, C#, VS Code (siehe [Kurs MF 4](../4))
 
 ## Was wir in diesem Kurs machen:
 

@@ -7,7 +7,7 @@ import HomeButton from '../components/HomeButton.astro'
 <BaseLayout title="MakeFest">
     <div class="max-w-screen-xl mx-auto p-0 space-y-0">
         <BaseHeader>
-            <HomeButton/>
+            <HomeButton client:load/>
         </BaseHeader>
 
         <slot/>
