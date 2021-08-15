@@ -1,0 +1,9 @@
+---
+import Courses from '../layouts/courses.astro';
+import {renderDuration} from '../js/utilities.js'
+import CoursesByTime from '../components/CoursesByTime.jsx';
+let coursesData = Astro.fetchContent('../markdown/mfs/*.md').sort((c1, c2) => {return c1.id - c2.id;});
+---
+<Courses title="Kurse">
+    <CoursesByTime courses={coursesData}/>
+</Courses>

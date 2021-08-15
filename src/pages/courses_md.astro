@@ -5,5 +5,7 @@ import CourseCard from '../components/CourseCard.astro';
 let coursesData = Astro.fetchContent('../markdown/mfs/*.md').sort((c1, c2) => {return c1.id - c2.id;});
 ---
 <Courses title="Kurse">
-    {coursesData.map((course) => <CourseCard id={course.id} title={course.title} duration={renderDuration(course.firstSession, course.lastSession)} img={course.img}/>)}
+    <div class="bg-black flex flex-row flex-wrap justify-between">
+        {coursesData.map((course) => <CourseCard id={course.id} title={course.title} duration={renderDuration(course.firstSession, course.lastSession)} img={course.img}/>)}
+    </div>
 </Courses>

@@ -9,9 +9,8 @@ const coursePath = "mf2"
 const {id, title, duration, img} = Astro.props;
 ---
 <!-- CourseCard -->
-{console.log('image: ' + id + ', ' + img)}
 <a href={coursePath + '/' + id} class="w-full max-w-screen-sm py-2 sm:w-[49%] lg:w-[32%]">
-    <img class="rounded-2xl rounded-b-none" src={img}>
+    <img class="rounded-2xl rounded-b-none" src={img}/>
     <div class={'bg-gray-800 max-w-screen-sm rounded-2xl h-20 relative' + (!img ? '' : ' rounded-t-none')}>
         <div class="px-4 py-2 absolute w-1/2 top-0 left-0 text-gray-400 font-black text-2xl">MF {id}</div>
         <div class="px-4 py-2 absolute top-0 right-0 text-gray-600 font-black text-xl">{duration}</div>

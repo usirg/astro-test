@@ -1,7 +1,7 @@
 ---
 id: 7
 title: Crashkurs Spieleentwicklung
-firstSession: 2021-08-01
+firstSession: 2021-08-16
 lastSession: 2021-08-30
 img:
 poster: 
@@ -19,7 +19,7 @@ filePartial:
 
 * wir lernen das Programm Unity kennen, mit dem Du Computerspiele entwickeln kannst
 * wir lernen die Programmiersprache C# kennen, mit der Du Deine eigenen Ideen realisieren kannst
-* wir entwickeln ein erstes einfaches Spiel (Beispiele aus früheren Kursen findest Du [hier](../index.html).)
+* wir entwickeln ein erstes einfaches Spiel (Beispiele aus früheren Kursen findest Du [hier](../courses).)
 
 ## Wie es abläuft:
 

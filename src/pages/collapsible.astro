@@ -1,0 +1,15 @@
+---
+import Courses from '../layouts/courses.astro';
+import CoursesWrapper from '../components/CoursesWrapper.jsx'
+let coursesData = Astro.fetchContent('../markdown/mfs/*.md').sort((c1, c2) => {return c1.id - c2.id;});
+--- 
+
+<Courses>
+    <div class="w-full">
+        <input id="1" type="checkbox" class="w-full peer sr-only">
+        <label for="1" class="w-full bg-gray-400">click me</label>
+        <div class="w-full max-h-0 bg-gray-200 peer-checked:bg-blue-500 peer-checked:max-h-full">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, ipsam reprehenderit voluptas voluptates numquam exercitationem deleniti! Quo corrupti non, a magnam reprehenderit error aspernatur magni iste, odio quibusdam dolores quod.
+        </div>
+    </div>
+</Courses>

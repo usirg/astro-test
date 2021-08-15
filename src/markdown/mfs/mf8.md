@@ -1,7 +1,7 @@
 ---
 id: 8
 title: Modellierung für Spieleentwicklung
-firstSession: 2021-08-01
+firstSession: 2021-08-16
 lastSession: 2021-08-30
 img:
 poster: 
