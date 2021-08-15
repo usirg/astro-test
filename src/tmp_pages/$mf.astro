@@ -1,0 +1,27 @@
+---
+import Page from '../layouts/page.astro';
+import {renderDuration} from '../js/utilities.js'
+export async function createCollection() {
+    const coursesData = Astro.fetchContent('../markdown/mfs/*.md');
+    return {
+    route: `/mf/:id`,
+    paths() {
+      return coursesData.map((course, i) => ({params: {id: course.id}}));
+    },
+    async props({ params }) {
+      return {
+        course: coursesData.find((course) => course.id === params.id)};
+    },
+  };
+}
+const {course} = Astro.props;
+---
+<html>
+  <head>
+    <title>MakeFest: {course.id}</head>
+  <body>
+    This is Makefest {course.id}!
+    Last Session: {course.lastSession}
+    {course.astro.html}
+  </body>
+</html>

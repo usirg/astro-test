@@ -1,6 +1,5 @@
 ---
 layout: ../layouts/page.astro
-name: Sepp
 ---
 # Über MakeFest
 

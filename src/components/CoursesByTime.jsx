@@ -25,21 +25,21 @@ export default function CoursesByTime(props) {
   return (
     <div>
       <SectionHeading title="Abgeschlossene Kurse"/>
-      <div class="bg-black flex flex-row flex-wrap justify-between">
+      <div className="bg-black flex flex-row flex-wrap justify-between">
         {pastCourses.map(course => 
         <ReactCourse key={course.id} id={course.id} title={course.title} duration={renderDuration(course.firstSession, course.lastSession)} img={course.img}></ReactCourse>
         )}
       </div>
       
       <SectionHeading title="Laufende Kurse" rule={true}/>
-      <div class="bg-black flex flex-row flex-wrap justify-between">
+      <div className="bg-black flex flex-row flex-wrap justify-between">
         {presentCourses.map(course => 
         <ReactCourse key={course.id} id={course.id} title={course.title} duration={renderDuration(course.firstSession, course.lastSession)} img={course.img}></ReactCourse>
         )}
       </div>
 
       <SectionHeading title="Zukünftige Kurse" rule={true}/>
-      <div class="bg-black flex flex-row flex-wrap justify-between">
+      <div className="bg-black flex flex-row flex-wrap justify-between">
         {futureCourses.map(course => 
         <ReactCourse key={course.id} id={course.id} title={course.title} duration={renderDuration(course.firstSession, course.lastSession)} img={course.img}></ReactCourse>
         )}
